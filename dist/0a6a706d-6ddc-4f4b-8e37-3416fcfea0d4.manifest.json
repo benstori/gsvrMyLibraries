@@ -1,0 +1,58 @@
+{
+  "id": "0a6a706d-6ddc-4f4b-8e37-3416fcfea0d4",
+  "alias": "MyLibrariesWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "myLibraries"
+      },
+      "description": {
+        "default": "this web part will get the users documents from their team site for and display them on  the homepage"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "myLibraries"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "my-libraries-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "my-libraries-web-part": {
+        "type": "path",
+        "path": "dist/my-libraries-web-part.js"
+      },
+      "MyLibrariesWebPartStrings": {
+        "defaultPath": "lib/webparts/myLibraries/loc/en-us.js",
+        "type": "localizedPath",
+        "paths": {}
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}
